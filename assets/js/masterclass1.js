@@ -88,11 +88,16 @@ class Person{
 
         // binding the method to this class for the listner
         this.sayHi = this.sayHi.bind(this);
+this.initDomElements();
 
+    }
+
+
+    // factory design pattern for propper MVC :)
+    initDomElements(){
         this.element= document.createElement('div');
         this.element.innerText = 'Person';
         this.element.classList.add('person');
-
         this.element.addEventListener('click', this.sayHi);
 
         personContainer.appendChild(this.element);
