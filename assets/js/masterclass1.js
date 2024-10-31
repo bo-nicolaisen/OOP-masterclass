@@ -58,11 +58,23 @@ class Person{
     constructor(name, age){
         this.name = name;
         this.age = age;
-        //this.#sayHi();
+        this.initDomElements();
+    }
+
+    // factory design pattern for propper MVC :)
+    initDomElements(){
+        this.element= document.createElement('div');
+        this.element.innerText = 'Person';
+        this.element.classList.add('person');
+       
+        personContainer.appendChild(this.element);
+
     }
 
     #sayHi(){
-        console.log(`Hello, my name is ${this.name}`);
+          this.element.classList.toggle('personActive');
+       this.element.innerText=`Hello, my name is ${this.name} and i am ${this.age} years old`;
+       this.element.removeEventListener('click', this.sayHi);
     }
 
 }
