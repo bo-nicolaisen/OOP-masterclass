@@ -1,0 +1,17 @@
+
+.person{
+    width: 90%;
+    background-color: #ac0909;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+    transition: 1000ms;
+    
+}
+
+.personActive{
+    background-color: #11bb11;
+    color: #ffffff;
+}
