@@ -19,6 +19,7 @@ console.log(person.age);
 
 
 
+
 // private properties
 class Person{
 #age
@@ -53,6 +54,7 @@ console.log(person.age);
 
 
 
+//  methods
 class Person{
 
     constructor(name, age){
@@ -71,7 +73,7 @@ class Person{
 
     }
 
-    #sayHi(){
+    sayHi(){
           this.element.classList.toggle('personActive');
        this.element.innerText=`Hello, my name is ${this.name} and i am ${this.age} years old`;
        this.element.removeEventListener('click', this.sayHi);
