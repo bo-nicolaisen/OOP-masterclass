@@ -52,15 +52,19 @@ console.log(person.age);
 person.age = 30;
 console.log(person.age);
 
-
+*/
 
 //  methods
+const personContainer = document.getElementById('app');
+
 class Person{
 
     constructor(name, age){
         this.name = name;
         this.age = age;
+        
         this.initDomElements();
+
     }
 
     // factory design pattern for propper MVC :)
@@ -85,14 +89,14 @@ let person = new Person('John', 25);
 
 console.log(person);
 
-person.sayHi();
-*/
+//person.sayHi();
+
 
 
 
 // bind method to class
 
-const personContainer = document.getElementById('app');
+/* const personContainer = document.getElementById('app');
 
 class Person{
 
@@ -131,7 +135,7 @@ this.initDomElements();
 new Person('ib', 25);
 new Person('keld', 12);
 new Person('søren', 45);
-new Person('bolette', 345);
+new Person('bolette', 345); */
 
 
 
